@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<link as='font' crossorigin='anonymous' href='https://assets.exercism.org/assets/poppins-v20-latin-regular-ac6d71b4d5fdd2b3dabc9a06ff6c001e4251da0b.woff2' rel='preload' type='font/woff2'>
+<link as='font' crossorigin='anonymous' href='https://assets.exercism.org/assets/poppins-v20-latin-600-179f97ec0275f09603a8db94d4380eb584d81cd5.woff2' rel='preload' type='font/woff2'>
+<link rel="stylesheet" href="https://assets.exercism.org/assets/website-109aef57e8f02904e8f5900f93d78b0f9654b9ac.css" data-turbo-track="reload" />
+
+<link as='font' crossorigin='anonymous' href='https://assets.exercism.org/assets/poppins-v20-latin-500-0da2d17e738f46d2a09e6fb7969da451719a9820.woff2' rel='preload' type='font/woff2'>
+<link as='font' crossorigin='anonymous' href='https://assets.exercism.org/assets/poppins-v20-latin-700-cb726212d5d525021752a1d8470a0fb593e0c49e.woff2' rel='preload' type='font/woff2'>
+<link as='font' crossorigin='anonymous' href='https://assets.exercism.org/assets/source-code-pro-v22-latin_latin-ext-regular-ac7e13e27e17f830518f9899f1928cb5bfde3c3b.woff2' rel='preload' type='font/woff2'>
+<style>
+  @font-face {
+    font-display: fallback;
+    font-family: PoppinsInitial;
+    font-weight: 400;
+    src: url(https://assets.exercism.org/assets/poppins-v20-latin-regular-ac6d71b4d5fdd2b3dabc9a06ff6c001e4251da0b.woff2) format('woff2');
+  }
+</style>
+<style>
+  @font-face {
+    font-display: fallback;
+    font-family: PoppinsInitial;
+    font-weight: 500;
+    src: url(https://assets.exercism.org/assets/poppins-v20-latin-600-179f97ec0275f09603a8db94d4380eb584d81cd5.woff2) format('woff2');
+  }
+</style>
+<style>
+  @font-face {
+    font-display: fallback;
+    font-family: PoppinsInitial;
+    font-weight: 600;
+    src: url(https://assets.exercism.org/assets/poppins-v20-latin-600-179f97ec0275f09603a8db94d4380eb584d81cd5.woff2) format('woff2');
+  }
+</style>
+<style>
+  @font-face {
+    font-display: fallback;
+    font-family: PoppinsInitial;
+    font-weight: 700;
+    src: url(https://assets.exercism.org/assets/poppins-v20-latin-600-179f97ec0275f09603a8db94d4380eb584d81cd5.woff2) format('woff2');
+  }
+</style>
+<style>
+  body {
+    --body-font: Poppins, PoppinsInitial, sans-serif;
+    font-family: var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+</style>
+<script src="https://assets.exercism.org/assets/landing-a7aed8229d63813cb2c0e09bdeef1951a83e7e79.js" crossorigin="anonymous" type="module" data-turbo-track="reload" data-turbo-eval="false" defer="defer"></script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1d3f833954d44d6e8d93219676a70d34"}'></script>
+
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link href='https://exercism.org' rel='canonical'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="xkd7551TGo4DoApD2DnnLYoIwCNTpxP_nrTv1whAIpZdshqAOcyvY5fScw8dvqqwqfWzwNQT3fx1cxhCjV0uig" />
+
+<meta name="action-cable-url" content="wss://exercism.org/cable" />
+<meta content='no-cache' name='turbo-cache-control'>
+<meta content='language-servers-925786784.eu-west-2.elb.amazonaws.com' name='language-server-url'>
+<meta content='https://exercism.org/api/v2/bug_reports' name='bug-reports-url'>
+<meta content='https://exercism.org/api/v2/markdown/parse' name='parse-markdown-url'>
+<meta content='' name='user-id'>
+<meta content='pk_live_51IDGMXEoOT0Jqx0UGsyx7fUW7iojTCPobNQDDoVdVY64qsyeNyFDqQRAgXSdj2HF8mYzPGxsBWIEFPnenq0lEhLH00x7KfG52T' name='stripe-publishable-key'>
+<title>Exercism</title>
+<meta content='Learn, practice and get world-class mentoring in over 50 languages. 100% free.' name='description'>
+<meta content='width=device-width, initial-scale=1, viewport-fit=cover' name='viewport'>
+<meta content='summary_large_image' name='twitter:card'>
+<meta content='@exercism_io' name='twitter:site'>
+<meta content='@exercism_io' name='twitter:creator'>
+<meta content='https://exercism.org' name='twitter:url'>
+<meta content='Exercism' name='twitter:title'>
+<meta content='Learn, practice and get world-class mentoring in over 50 languages. 100% free.' name='twitter:description'>
+<meta content='https://assets.exercism.org/meta/og.png' name='twitter:image'>
+<meta content='Exercism' property='og:title'>
+<meta content='website' property='og:type'>
+<meta content='https://exercism.org' property='og:url'>
+<meta content='https://assets.exercism.org/meta/og.png' property='og:image'>
+<meta content='Learn, practice and get world-class mentoring in over 50 languages. 100% free.' property='og:description'>
+<meta content='Exercism' property='og:site_name'>
+<meta content='744760440' property='fb:admins'>
+<link href='https://assets.exercism.org/meta/apple-touch-icon.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='https://assets.exercism.org/meta/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+<link href='https://assets.exercism.org/meta/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+<link href='/site.webmanifest' rel='manifest'>
+<link href='https://exercism.org/blog.rss' rel='alternate' title='Exercism&#39;s Blog' type='application/rss+xml'>
+<meta content='ca-pub-1298009554972786' name='google-adsense-account'>
+
+
+</head>
+<body class='namespace- controller-pages action-index theme-light user-signed_out'>
+<header id="site-header"><a class="announcement-bar md:block hidden" href="https://exercism.org/courses/coding-fundamentals"><div class="lg-container"><span class="emoji mr-6">👋</span><span>Learning to code? Check out our</span><strong>Coding Fundamentals</strong><span>course for beginners!</span></div></a><div class="lg-container container"><a class="exercism-link xl:block" data-turbo-frame="tf-main" href="/"><img alt="Exercism" class="c-icon" src="https://assets.exercism.org/assets/icons/exercism-with-logo-black-12752bd7fcf6862ba8ad7a2b75e21a9b2409d7fd.svg" /></a><div class="docs-search"><div class="c-search-bar"><input class="--search" placeholder="Search Exercism&#39;s docs..."></div></div><nav role="navigation"><ul><li class="nav-element "><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/tracks"><span tabindex="-1" role="none" class="nav-element-label ">Learn</span></a><div class="nav-element-dropdown has-no-view" style="--dropdown-offset: -0px;" role="menu"><ul><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/tracks"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-none" src="https://assets.exercism.org/assets/icons/nav-tracks-9fea2eca1d8eb6bcb7da69ce8e4fd34631b366e3.svg" /><div class="overflow-hidden pr-40"><h6>Language Tracks</h6><p>Upskill in 65+ languages</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="https://exercism.org/bootcamp?course=coding-fundamentals"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-none" src="https://assets.exercism.org/assets/icons/nav-coding-fundamentals-5a04ade8f48cdf1c24c58f4bbff0ec9dcfbf3765.svg" /><div class="overflow-hidden pr-40"><h6>Coding Fundamentals</h6><p>The ultimate way to learn to code</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="https://exercism.org/bootcamp?course=front-end-fundamentals"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-none" src="https://assets.exercism.org/assets/icons/nav-front-end-fundamentals-8fff8aefe057cdfd95bef8db6bc7f25dcfe05d2c.svg" /><div class="overflow-hidden pr-40"><h6>Front-end Fundamentals</h6><p>Learn the basics of front-end development</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/journey"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-none" src="https://assets.exercism.org/assets/icons/nav-journey-08d0785bc7b3d22d165f2865db17ed403851890a.svg" /><div class="overflow-hidden pr-40"><h6>Your Journey</h6><p>Explore your Exercism journey</p></div></div></a></li></ul></div><div class="arrow"></div></li><li class="nav-element "><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/community"><span tabindex="-1" role="none" class="nav-element-label ">Discover</span></a><div class="nav-element-dropdown has-no-view" style="--dropdown-offset: -20px;" role="menu"><ul><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/perks"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-none" src="https://assets.exercism.org/assets/icons/perks-gradient-0e53b8b88c052e0ccfe01e285368fc9f9af379d7.svg" /><div class="overflow-hidden pr-40"><h6>Exercism Perks</h6><p>Offers &amp; discounts from our partners</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/community/videos"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-none" src="https://assets.exercism.org/assets/icons/external-site-youtube-576ec3c908a28230467d08470876b23c722f30da.svg" /><div class="overflow-hidden pr-40"><h6>Community Videos</h6><p>Streaming, walkthroughs &amp; more</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/community/brief_introductions"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-none" src="https://assets.exercism.org/assets/icons/brief-introductions-gradient-3439520e35035eed80d2dd3007a6cd169002a506.svg" /><div class="overflow-hidden pr-40"><h6>Brief Introduction Series</h6><p>Short language overviews</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/community/interviews"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-none" src="https://assets.exercism.org/assets/icons/interview-gradient-af38864f2f7811ce5ed451df999f845ff7ea615b.svg" /><div class="overflow-hidden pr-40"><h6>Interviews &amp; Stories</h6><p>Get inspired by people&#39;s stories</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" target="_blank" rel="noreferrer" href="/r/discord"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-none" src="https://assets.exercism.org/assets/icons/external-site-discord-blue-601d4e0f105167ec2923cc05ff798066cef6018c.svg" /><div class="overflow-hidden pr-40"><h6>Discord</h6><p>Chat &amp; hang with the community</p></div><img alt="The link opens in a new window or tab" class="c-icon external-icon filter-textColor6" src="https://assets.exercism.org/assets/icons/external-link-49b422d65245eaf4cb29a072e85d73b5c6b8aa04.svg" /></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" target="_blank" rel="noreferrer" href="/r/forum"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-none" src="https://assets.exercism.org/assets/icons/discourser-a9f3a217ecdcdf6ad48cc87060162217030d2eb8.svg" /><div class="overflow-hidden pr-40"><h6>Forum</h6><p>Dig deeper into topics</p></div><img alt="The link opens in a new window or tab" class="c-icon external-icon filter-textColor6" src="https://assets.exercism.org/assets/icons/external-link-49b422d65245eaf4cb29a072e85d73b5c6b8aa04.svg" /></div></a></li></ul></div><div class="arrow"></div></li><li class="nav-element "><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/contributing"><span tabindex="-1" role="none" class="nav-element-label ">Contribute</span></a><div class="nav-element-dropdown has-no-view" style="--dropdown-offset: -20px;" role="menu"><ul><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/contributing"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-textColor6" src="https://assets.exercism.org/assets/icons/overview-9e9a39e9f2e81d2a28adf4254c588f9864d7e3a3.svg" /><div class="overflow-hidden pr-40"><h6>Getting started</h6><p>How you can help Exercism</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/mentoring"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-textColor6" src="https://assets.exercism.org/assets/icons/mentoring-4d1e266458e8e3293b94679b92ccea4aa2cdb58b.svg" /><div class="overflow-hidden pr-40"><h6>Mentoring</h6><p>Support others as they learn</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/docs"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-textColor6" src="https://assets.exercism.org/assets/icons/docs-95801430359f8daa2166eda2663cf925b26e7ac6.svg" /><div class="overflow-hidden pr-40"><h6>Docs</h6><p>Everything you need to help</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/contributing/contributors"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-textColor6" src="https://assets.exercism.org/assets/icons/contributors-8873894d89a89d8a22512b9253d17a57b91df2d7.svg" /><div class="overflow-hidden pr-40"><h6>Contributors</h6><p>Meet the people behind Exercism</p></div></div></a></li></ul></div><div class="arrow"></div></li><li class="nav-element "><span tabindex="0" role="none" class="nav-element-label nav-element-focusable">More</span><div class="nav-element-dropdown has-no-view" style="--dropdown-offset: -0px;" role="menu"><ul><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/donate"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-textColor6" src="https://assets.exercism.org/assets/icons/donate-f0162e3dfad842a240d30ef6d422c5f4a969d857.svg" /><div class="overflow-hidden pr-40"><h6>Donate</h6><p>Help support our mission</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/about"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-textColor6" src="https://assets.exercism.org/assets/icons/exercism-face-0c7e5dc39e944a18810e6e770430b3f1e06a81cb.svg" /><div class="overflow-hidden pr-40"><h6>About Exercism</h6><p>Learn about our organisation</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/about/impact"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-textColor6" src="https://assets.exercism.org/assets/icons/report-23dfcc2b358696fb11fa6c7797edfc0d41ae0803.svg" /><div class="overflow-hidden pr-40"><h6>Our Impact</h6><p>Explore what we&#39;ve achieved</p></div></div></a></li><li><a tabindex="0" role="none" class="nav-element-link nav-element-focusable" href="/insiders"><div class="nav-dropdown-element" role="menuitem"><img alt="" class="c-icon filter-none" src="https://assets.exercism.org/assets/icons/insiders-d0418ec8b59d21a8852f7326404fa20b2d21785d.svg" /><div class="overflow-hidden pr-40"><h6>Insiders</h6><p>Our way of saying thank you</p></div></div></a></li></ul></div><div class="arrow"></div></li></ul></nav><div class="auth-buttons"><a class="btn-primary btn-xs" href="/users/sign_up">Sign up</a><a class="btn-secondary btn-xs" href="/users/sign_in">Log in</a></div><div class="c-react-component c-react-wrapper-dropdowns-dropdown" data-react-id="dropdowns-dropdown" data-react-data="{&quot;menu_button&quot;:{&quot;label&quot;:&quot;Button to open the navigation menu&quot;,&quot;className&quot;:&quot;explore-menu&quot;,&quot;extraClassNames&quot;:[&quot;btn-xs&quot;,&quot;btn-enhanced&quot;],&quot;html&quot;:&quot;\u003cimg alt=\&quot;\&quot; class=\&quot;c-icon\&quot; src=\&quot;https://assets.exercism.org/assets/icons/hamburger-7e74aa2e28fa2c1297400d23b3994a60439f7d83.svg\&quot; /\u003e\u003cspan\u003eExplore\u003c/span\u003e&quot;},&quot;menu_items&quot;:[{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/\&quot;\u003eHome\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/tracks\&quot;\u003eLanguage Tracks\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/community\&quot;\u003eCommunity\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/mentoring\&quot;\u003eMentoring\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/insiders\&quot;\u003eInsiders 💜\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link&quot;},{&quot;html&quot;:&quot;\u003ca data-turbo-frame=\&quot;tf-main\&quot; href=\&quot;/donate\&quot;\u003eDonate\u003c/a\u003e&quot;,&quot;className&quot;:&quot;opt site-link donate&quot;}]}" data-react-hydrate="false" data-persistent="true"></div></div></header>
+<turbo-frame data-turbo-action="advance" id="tf-main">
+<div id='page-landing'>
+<header class='pt-24 sm:pt-32 md:pt-40 pb-56 sm:pb-56 c-header-with-bg'>
+<div class='lg-container flex items-start md:items-center flex-col-reverse md:flex-row'>
+<div class='lhs md:items-center lg:items-start md:text-center lg:text-left'>
+<h1 class='text-h0 mb-12'>
+Get
+<strong class='leading-none font-bold'>really</strong>
+good at programming.
+</h1>
+<p class='text-p-xlarge mb-24'>
+Develop fluency in
+<em class='not-italic font-medium text-textColor2'>77 programming languages</em>
+with our unique blend of learning, practice and mentoring.
+Exercism is fun, effective and
+<strong class='text-textColor2'>100% free, forever.</strong>
+</p>
+<div class='buttons flex mb-40 flex-col sm:flex-row'>
+<a class="btn-primary btn-l mb-12 sm:mb-0 sm:mr-24 " href="/users/sign_up">Sign up for free</a>
+<a class="btn-secondary btn-l shadow-buttonS" href="/tracks">Explore languages</a>
+</div>
+<div class='organisation pt-16 sm:items-center lg:items-start xl:items-center flex-col sm:flex-row lg:flex-col xl:flex-row px-24 sm:pl-32 sm:pr-48 pb-16 sm:pb-32 md:pb-16 lg:pb-16 xl:pb-16'>
+<img alt="Exercism" class="c-icon mr-16 mb-8 sm:mb-8 lg:mb-8" src="https://assets.exercism.org/assets/icons/exercism-with-logo-black-12752bd7fcf6862ba8ad7a2b75e21a9b2409d7fd.svg" />
+<div class='flex flex-col sm:flex-row lg:flex-col xl:flex-row sm:items-center lg:items-start xl:items-center'>
+<p class='text-p-base mb-8 sm:mb-0 text-left'>is an independent, community funded, not-for-profit organisation.</p>
+<a class="c-prominent-link sm:ml-40 lg:ml-0 xl:ml-40" href="/about">Learn more</a>
+</div>
+</div>
+</div>
+<div class='graphic grid md:hidden lg:grid lg:ml-24 mb-16 lg:mb-0'>
+<img alt="" class="c-icon" src="https://assets.exercism.org/assets/graphics/landing-page-top-74da2134b88efcf34b05e804987fdfb832771716.svg" />
+</div>
+</div>
+</header>
+<section class='tracks-section pt-40 md:pt-56 mb-40 md:mb-56'>
+<div class='lg-container'>
+<div class='section-header items-center self-center mb-8 md:mb-12'>
+<div class="c-icon  --hex"><img alt="" src="https://assets.exercism.org/assets/icons/tracks-2e780b460e113a9b07ce4446c988a31c40547b00.svg" /></div>
+<h2 class='text-h1 text-center'>
+Explore and
+<strong>get fluent</strong>
+in
+<br>
+77 programming languages
+</h2>
+<hr class='c-divider --large'>
+</div>
+<div class='mb-64 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6'>
+<a class="track" href="/tracks/python"><img alt="Python" class="c-track-icon  --python" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/python.svg" />
+<div class='title'>Python</div>
+<div class='students-count'>580,422 students</div>
+</a><a class="track" href="/tracks/javascript"><img alt="JavaScript" class="c-track-icon  --javascript" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/javascript.svg" />
+<div class='title'>JavaScript</div>
+<div class='students-count'>426,222 students</div>
+</a><a class="track" href="/tracks/java"><img alt="Java" class="c-track-icon  --java" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/java.svg" />
+<div class='title'>Java</div>
+<div class='students-count'>221,526 students</div>
+</a><a class="track" href="/tracks/cpp"><img alt="C++" class="c-track-icon  --cpp" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/cpp.svg" />
+<div class='title'>C++</div>
+<div class='students-count'>148,342 students</div>
+</a><a class="track" href="/tracks/csharp"><img alt="C#" class="c-track-icon  --csharp" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/csharp.svg" />
+<div class='title'>C#</div>
+<div class='students-count'>143,011 students</div>
+</a><a class="track" href="/tracks/go"><img alt="Go" class="c-track-icon  --go" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/go.svg" />
+<div class='title'>Go</div>
+<div class='students-count'>139,949 students</div>
+</a><a class="track" href="/tracks/rust"><img alt="Rust" class="c-track-icon  --rust" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/rust.svg" />
+<div class='title'>Rust</div>
+<div class='students-count'>121,344 students</div>
+</a><a class="track" href="/tracks/c"><img alt="C" class="c-track-icon  --c" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/c.svg" />
+<div class='title'>C</div>
+<div class='students-count'>120,973 students</div>
+</a><a class="track" href="/tracks/typescript"><img alt="TypeScript" class="c-track-icon  --typescript" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/typescript.svg" />
+<div class='title'>TypeScript</div>
+<div class='students-count'>81,422 students</div>
+</a><a class="track" href="/tracks/bash"><img alt="Bash" class="c-track-icon  --bash" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/bash.svg" />
+<div class='title'>Bash</div>
+<div class='students-count'>70,265 students</div>
+</a><a class="track" href="/tracks/ruby"><img alt="Ruby" class="c-track-icon  --ruby" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/ruby.svg" />
+<div class='title'>Ruby</div>
+<div class='students-count'>57,898 students</div>
+</a><a class="track" href="/tracks/php"><img alt="PHP" class="c-track-icon  --php" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/php.svg" />
+<div class='title'>PHP</div>
+<div class='students-count'>54,932 students</div>
+</a></div>
+<div class='cta border-t-3 border-veryLightBlue'>
+<a class="c-prominent-link --with-bg" href="/tracks"><span>See all 77 Language Tracks</span><img alt="" class="c-icon" src="https://assets.exercism.org/assets/icons/arrow-right-0f5e363467e0c55fe280b4864639a9c677afa0d2.svg" /></a>
+</div>
+</div>
+</section>
+<section class='exercises-section pb-64'>
+<div class='lg-container'>
+<div class='flex flex-col lg:flex-row lg:items-start mb-48 lg:mb-72'>
+<div class='flex-grow mr-auto lg:max-w-[640px]'>
+<div class='section-header mb-24 sm:mb-32'>
+<div class="c-icon  --hex"><img alt="" src="https://assets.exercism.org/assets/icons/exercises-8a7df249fbfb76cc18efbbee844d9bd742830404.svg" /></div>
+<h2 class='text-h2'>
+Over
+<strong>7,388 coding exercises.</strong>
+<br>
+From "Allergies" to "Zebra Puzzle".
+</h2>
+<hr class='c-divider'>
+<p class='text-p-xlarge'>
+Learn by doing. Get better at programming through fun coding exercises that build your understanding of concepts.
+</p>
+</div>
+<div class='exercises'>
+<div class='exercise sm:items-center'>
+<img alt="Allergies" class="c-icon c-exercise-icon " onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-exercise-54cf5afe4add37d9cf717793c91b088a7dd242ef.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-exercise-54cf5afe4add37d9cf717793c91b088a7dd242ef.svg&#39;;" src="https://assets.exercism.org/exercises/allergies.svg" />
+<div class='flex-grow flex flex-col sm:flex-row sm:items-center'>
+<div class='exercise-info mb-8 sm:mb-0'>
+<h3>Allergies</h3>
+<p>Given a person&#39;s allergy score, determine whether or not they&#39;re allergic to a given item, and their full list of allergies.</p>
+</div>
+<div class='flex items-center flex-shrink-0'>
+<div class='track-icons sm:ml-16'>
+<img alt="Java" class="c-track-icon  --java" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/java.svg" />
+<img alt="C#" class="c-track-icon  --csharp" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/csharp.svg" />
+<img alt="C++" class="c-track-icon  --cpp" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/cpp.svg" />
+</div>
+<div class='font-semibold text-textColor7 ml-16 whitespace-nowrap'>+40 more</div>
+</div>
+</div>
+</div>
+<div class='exercise sm:items-center'>
+<img alt="Queen Attack" class="c-icon c-exercise-icon " onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-exercise-54cf5afe4add37d9cf717793c91b088a7dd242ef.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-exercise-54cf5afe4add37d9cf717793c91b088a7dd242ef.svg&#39;;" src="https://assets.exercism.org/exercises/queen-attack.svg" />
+<div class='flex-grow flex flex-col sm:flex-row sm:items-center'>
+<div class='exercise-info mb-8 sm:mb-0'>
+<h3>Queen Attack</h3>
+<p>Given the position of two queens on a chess board, indicate whether or not they are positioned so that they can attack each other</p>
+</div>
+<div class='flex items-center flex-shrink-0'>
+<div class='track-icons sm:ml-16'>
+<img alt="Java" class="c-track-icon  --java" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/java.svg" />
+<img alt="Rust" class="c-track-icon  --rust" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/rust.svg" />
+<img alt="C#" class="c-track-icon  --csharp" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/csharp.svg" />
+</div>
+<div class='font-semibold text-textColor7 ml-16 whitespace-nowrap'>+60 more</div>
+</div>
+</div>
+</div>
+<div class='exercise sm:items-center'>
+<img alt="Zebra Puzzle" class="c-icon c-exercise-icon " onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-exercise-54cf5afe4add37d9cf717793c91b088a7dd242ef.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-exercise-54cf5afe4add37d9cf717793c91b088a7dd242ef.svg&#39;;" src="https://assets.exercism.org/exercises/zebra-puzzle.svg" />
+<div class='flex-grow flex flex-col sm:flex-row sm:items-center'>
+<div class='exercise-info mb-8 sm:mb-0'>
+<h3>Zebra Puzzle</h3>
+<p>Which of the residents drinks water? Who owns the zebra? Can you solve the Zebra Puzzle with code?</p>
+</div>
+<div class='flex items-center flex-shrink-0'>
+<div class='track-icons sm:ml-16'>
+<img alt="JavaScript" class="c-track-icon  --javascript" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/javascript.svg" />
+<img alt="Bash" class="c-track-icon  --bash" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/bash.svg" />
+<img alt="TypeScript" class="c-track-icon  --typescript" onerror="if (this.src != &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;) this.src = &#39;https://assets.exercism.org/assets/graphics/missing-track-e3d861058d4702c1dc4036617689249659b8d37d.svg&#39;;" src="https://assets.exercism.org/tracks/typescript.svg" />
+</div>
+<div class='font-semibold text-textColor7 ml-16 whitespace-nowrap'>+70 more</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<img alt="" class="main-graphic lg:max-w-1-2 lg:ml-80 mt-32 lg:mt-96 shadow-lgZ1 w-fill" width="1376" height="1076" srcset="https://assets.exercism.org/assets/screenshots/landing-page-exercise-400w-eb05d4ccfcfc22e381994cd9a5c764be6eebf5f2.webp 400w, https://assets.exercism.org/assets/screenshots/landing-page-exercise-688w-fa6e4540d13a259c0c283460d61f7d1c3c0955e6.webp 688w, https://assets.exercism.org/assets/screenshots/landing-page-exercise-800w-bb159cda636288d85263729bd69fc8bdc6ca8422.webp 800w, https://assets.exercism.org/assets/screenshots/landing-page-exercise-1376w-333335cca15a5319f4315327504d7e6d86f0ee33.webp 1376w" sizes="(min-width: 1024px) 50vw, 100vw" src="https://assets.exercism.org/assets/screenshots/landing-page-exercise-1376w-333335cca15a5319f4315327504d7e6d86f0ee33.webp" />
+</div>
+<div class='features grid grid-cols-1 md:grid-cols-3 gap-x-80 gap-y-32'>
+<div class='feature'>
+<img alt="" class="c-icon" src="https://assets.exercism.org/assets/icons/features-local-2add638174fc7bc8b996ba7adcd79567fa995eea.svg" />
+<h3 class='text-h4'>Write code locally, in your own space</h3>
+<p class='text-p-base'>Exercism is primarily built as a CLI-first tool. Download and submit exercises right from your terminal.</p>
+</div>
+<div class='feature'>
+<img alt="" class="c-icon" src="https://assets.exercism.org/assets/icons/features-editor-86efd1d24f03b40f84a25cb00554a255d668f598.svg" />
+<h3 class='text-h4'>Use the Exercism in-browser editor</h3>
+<p class='text-p-base'>Don&apos;t spend hours installing a language locally just to try it out. We support all 77 of our programming languages in our in-browser editor.</p>
+</div>
+<div class='feature'>
+<img alt="" class="c-icon" src="https://assets.exercism.org/assets/icons/features-feedback-b933f415772e36c9ecf3b28ccab52693e100c116.svg" />
+<h3 class='text-h4'>Get automated analysis on your code</h3>
+<p class='text-p-base'>Not quite sure how well you&apos;ve done? We run automatic analysis on your solutions to give you quick feedback and points of improvement.</p>
+</div>
+</div>
+</div>
+</section>
+<section class='mentoring-section'>
+<div class='lg-container'>
+<div class='flex flex-col md:flex-row items-center justify-center mb-24 sm:mb-64'>
+<img alt="" class="c-icon top-graphic mb-20 md:mb-0 lg:mr-128" src="https://assets.exercism.org/assets/graphics/mentoring-coffee-8bef8c16ec49cbf68b87900e657c53959c14e504.svg" />
+<div class='section-header'>
+<div class="c-icon  --hex"><img alt="" src="https://assets.exercism.org/assets/icons/exercises-8a7df249fbfb76cc18efbbee844d9bd742830404.svg" /></div>
+<h2 class='text-h2'>
+Deepen your knowledge with human mentoring,
+<strong>for free.</strong>
+</h2>
+<hr class='c-divider'>
+<p class='text-p-xlarge'>
+Discover new and exciting ways to approach an exercise by getting mentored on it. Become more familiar with the conventions, idioms and opinions of a particular programming language.
+</p>
+</div>
+</div>
+<img class="main-graphic mb-60 shadow-lgZ1" width="2752" height="1796" srcset="https://assets.exercism.org/assets/screenshots/mentoring-400w-c6bb7ab203bd88f546456df61bd969a4d581228d.webp 400w, https://assets.exercism.org/assets/screenshots/mentoring-500w-cb5251ae4aebc5d213d413f3f17783141bebd3b1.webp 500w, https://assets.exercism.org/assets/screenshots/mentoring-800w-8fd1efda1074c898ba7d4f0d0165b801d9855758.webp 800w, https://assets.exercism.org/assets/screenshots/mentoring-1000w-8fd1efda1074c898ba7d4f0d0165b801d9855758.webp 1000w, https://assets.exercism.org/assets/screenshots/mentoring-1376w-41596a11e07ee560808ad5b09fc2105d723770ab.webp 1376w, https://assets.exercism.org/assets/screenshots/mentoring-2752w-42d792146bdb3e2ece2d885cf5d10437b122ee9f.webp 2752w" sizes="100vw" src="https://assets.exercism.org/assets/screenshots/mentoring-2752w-42d792146bdb3e2ece2d885cf5d10437b122ee9f.webp" />
+<div class='flex flex-col items-center'>
+<h3 class='text-h2'>Why mentoring?</h3>
+<hr class='c-divider mt-16 mb-24'>
+</div>
+<div class='features grid grid-cols-1 md:grid-cols-3 gap-x-80 gap-y-32'>
+<div class='feature'>
+<img alt="" class="c-icon" src="https://assets.exercism.org/assets/icons/features-do-not-know-79f18976f977caccc46cf7d36f99932f28fe20d8.svg" />
+<h3 class='text-h4'>You don&apos;t know what you don&apos;t know</h3>
+<p class='text-p-base'>When learning a new language, the hardest part is not being aware of the gaps in your knowledge. Our mentors can look at your code and immediately see the ideas you&apos;re not familiar with and give you a level-up by unlocking new knowledge.</p>
+</div>
+<div class='feature'>
+<img alt="" class="c-icon" src="https://assets.exercism.org/assets/icons/features-fluency-79f18976f977caccc46cf7d36f99932f28fe20d8.svg" />
+<h3 class='text-h4'>Learn language-specific conventions</h3>
+<p class='text-p-base'>Becoming fluent in a language is more than being able to write code in it - it&apos;s about being able to think in that language. Our mentors will help guide you to how to reshape your thinking to write idiomatic code.</p>
+</div>
+<div class='feature'>
+<img alt="" class="c-icon" src="https://assets.exercism.org/assets/icons/features-feedback-b933f415772e36c9ecf3b28ccab52693e100c116.svg" />
+<h3 class='text-h4'>Learning with others is fun</h3>
+<p class='text-p-base'>Getting feedback from real people is an amazingly exciting way to learn. And becoming a mentor and giving feedback yourself is an even bigger step forward. So complete the circle - be mentored and mentor 🎉</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+</turbo-frame>
+<div id='portal-container'></div>
+<div class='c-loading-overlay'></div>
+<footer id="site-footer"><div class='external-section pt-48 pb-0'>
+<div class='lg-container flex flex-col lg:flex-row'>
+<div class='lhs mr-auto mb-20 lg:mb-0'>
+<img alt="" class="c-icon" src="https://assets.exercism.org/assets/icons/exercism-with-logo-black-12752bd7fcf6862ba8ad7a2b75e21a9b2409d7fd.svg" />
+<h2 class='text-h3 mb-4'>Code practice and mentorship for everyone</h2>
+<p class='text-p-large'>
+Develop fluency in 77 programming languages
+with our unique blend of learning, practice and mentoring.
+Exercism is fun, effective and
+100% free, forever.
+</p>
+</div>
+<div class='rhs flex lg:ml-24 flex-col sm:flex-row items-stretch sm:items-center'>
+<a class="btn-l btn-primary mb-16 sm:mb-0 sm:mr-32" href="/users/sign_up">Sign up for free</a>
+<a class="btn-l btn-enhanced" href="/tracks">Explore languages</a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='lg-container'>
+<hr>
+<div class='site-links mt-24 md:mt-56'>
+<div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-40'>
+<div class='col'>
+<h3>Editions</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="https://exercism.org/">Exercism</a></li>
+<li><a href="https://exercism.org/courses/coding-fundamentals">Learn to Code</a></li>
+<li><a href="https://exercism.org/courses/coding-fundamentals">Coding Fundamentals</a></li>
+<li><a href="https://exercism.org/courses/front-end-fundamentals">Front-end Course</a></li>
+<li><a href="https://exercism.org/bootcamp">Exercism Bootcamp</a></li>
+<li><a href="/docs/using/editions/teams">Exercism for Teams</a></li>
+<li><a href="/docs/using/editions/research">Exercism Research</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>About</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="/about">About Exercism</a></li>
+<li><a href="/about/team">Our team</a></li>
+<li><a href="/contributing/contributors">Contributors</a></li>
+<li><a href="/about/supporters/organisations">Partners</a></li>
+<li><a href="/about/supporters/individuals">Individual supporters</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>Get involved</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="/insiders">Exercism Insiders</a></li>
+<li><a href="/contributing">Contribute</a></li>
+<li><a href="/mentoring">Mentor</a></li>
+<li><a href="/donate">Donate</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>Legal &amp; policies</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="/docs/using/legal/terms-of-service">Terms of usage</a></li>
+<li><a href="/docs/using/legal/privacy-policy">Privacy policy</a></li>
+<li><a href="/docs/using/legal/cookie-policy">Cookie policy</a></li>
+<li><a href="/docs/using/legal/code-of-conduct">Code of conduct</a></li>
+<li><a href="/docs/using/legal/accessibility">Accessibility statement</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>Keep in touch</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="/blog">Exercism&#39;s blog</a></li>
+<li><a href="https://github.com/exercism/exercism">Discuss on GitHub</a></li>
+<li><a href="/docs/using/contact">Contact us</a></li>
+<li><a href="/docs/using/report-abuse">Report abuse</a></li>
+</ul>
+</div>
+<div class='col'>
+<h3>Get help</h3>
+<hr class='c-divider --small'>
+<ul>
+<li><a href="/docs">Exercism&#39;s Docs</a></li>
+<li><a href="/docs/using/getting-started">Getting started</a></li>
+<li><a href="/docs/using/faqs">FAQs</a></li>
+<li><a href="/docs/using/solving-exercises/working-locally">Installing the CLI</a></li>
+<li><a href="/cli-walkthrough">Interactive CLI Walkthrough</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='socials mt-24 mb-40 md:mb-56'>
+<a class="icon twitter" href="https://twitter.com/exercism_io"><img alt="" class="c-icon" src="https://assets.exercism.org/assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg" />
+</a><a class="icon facebook" href="https://facebook.com/exercism.io"><img alt="" class="c-icon" src="https://assets.exercism.org/assets/icons/external-site-facebook-30d7c9862735514b98cc354bc12f460a4a40d26b.svg" />
+</a><a class="icon github" href="https://github.com/exercism"><img alt="" class="c-icon" src="https://assets.exercism.org/assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg" />
+</a></div>
+<hr>
+<div class='tracks mt-32 md:mt-48 mb-32 md:mb-48 md:items-center'>
+<div class='hidden md:block'>
+<h2 class='text-h3'>Our programming language tracks</h2>
+<hr class='c-divider mt-28 mb-36'>
+</div>
+<div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-32'>
+<div class='col'>
+<ul>
+<li><a href="/tracks/8th">8th</a></li>
+<li><a href="/tracks/abap">ABAP</a></li>
+<li><a href="/tracks/arm64-assembly">ARM64 Assembly</a></li>
+<li><a href="/tracks/arturo">Arturo</a></li>
+<li><a href="/tracks/awk">AWK</a></li>
+<li><a href="/tracks/ballerina">Ballerina</a></li>
+<li><a href="/tracks/bash">Bash</a></li>
+<li><a href="/tracks/batch">Batch Script</a></li>
+<li><a href="/tracks/c">C</a></li>
+<li><a href="/tracks/csharp">C#</a></li>
+<li><a href="/tracks/cpp">C++</a></li>
+<li><a href="/tracks/cairo">Cairo</a></li>
+<li><a href="/tracks/cfml">CFML</a></li>
+<li><a href="/tracks/clojure">Clojure</a></li>
+<li><a href="/tracks/cobol">COBOL</a></li>
+<li><a href="/tracks/coffeescript">CoffeeScript</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="/tracks/common-lisp">Common Lisp</a></li>
+<li><a href="/tracks/crystal">Crystal</a></li>
+<li><a href="/tracks/d">D</a></li>
+<li><a href="/tracks/dart">Dart</a></li>
+<li><a href="/tracks/delphi">Delphi Pascal</a></li>
+<li><a href="/tracks/elixir">Elixir</a></li>
+<li><a href="/tracks/elm">Elm</a></li>
+<li><a href="/tracks/emacs-lisp">Emacs Lisp</a></li>
+<li><a href="/tracks/erlang">Erlang</a></li>
+<li><a href="/tracks/euphoria">Euphoria</a></li>
+<li><a href="/tracks/fsharp">F#</a></li>
+<li><a href="/tracks/fortran">Fortran</a></li>
+<li><a href="/tracks/gleam">Gleam</a></li>
+<li><a href="/tracks/go">Go</a></li>
+<li><a href="/tracks/groovy">Groovy</a></li>
+<li><a href="/tracks/haskell">Haskell</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="/tracks/idris">Idris</a></li>
+<li><a href="/tracks/java">Java</a></li>
+<li><a href="/tracks/javascript">JavaScript</a></li>
+<li><a href="/tracks/jq">jq</a></li>
+<li><a href="/tracks/julia">Julia</a></li>
+<li><a href="/tracks/kotlin">Kotlin</a></li>
+<li><a href="/tracks/lfe">Lisp Flavoured Erlang</a></li>
+<li><a href="/tracks/lua">Lua</a></li>
+<li><a href="/tracks/mips">MIPS Assembly</a></li>
+<li><a href="/tracks/nim">Nim</a></li>
+<li><a href="/tracks/objective-c">Objective-C</a></li>
+<li><a href="/tracks/ocaml">OCaml</a></li>
+<li><a href="/tracks/perl5">Perl</a></li>
+<li><a href="/tracks/pharo-smalltalk">Pharo</a></li>
+<li><a href="/tracks/php">PHP</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="/tracks/powershell">PowerShell</a></li>
+<li><a href="/tracks/prolog">Prolog</a></li>
+<li><a href="/tracks/purescript">PureScript</a></li>
+<li><a href="/tracks/pyret">Pyret</a></li>
+<li><a href="/tracks/python">Python</a></li>
+<li><a href="/tracks/r">R</a></li>
+<li><a href="/tracks/racket">Racket</a></li>
+<li><a href="/tracks/raku">Raku</a></li>
+<li><a href="/tracks/reasonml">ReasonML</a></li>
+<li><a href="/tracks/red">Red</a></li>
+<li><a href="/tracks/roc">Roc</a></li>
+<li><a href="/tracks/ruby">Ruby</a></li>
+<li><a href="/tracks/rust">Rust</a></li>
+<li><a href="/tracks/scala">Scala</a></li>
+<li><a href="/tracks/scheme">Scheme</a></li>
+</ul>
+</div>
+<div class='col'>
+<ul>
+<li><a href="/tracks/sqlite">SQLite</a></li>
+<li><a href="/tracks/sml">Standard ML</a></li>
+<li><a href="/tracks/swift">Swift</a></li>
+<li><a href="/tracks/tcl">Tcl</a></li>
+<li><a href="/tracks/typescript">TypeScript</a></li>
+<li><a href="/tracks/uiua">Uiua</a></li>
+<li><a href="/tracks/unison">Unison</a></li>
+<li><a href="/tracks/vlang">V</a></li>
+<li><a href="/tracks/vimscript">Vim script</a></li>
+<li><a href="/tracks/vbnet">Visual Basic</a></li>
+<li><a href="/tracks/wasm">WebAssembly</a></li>
+<li><a href="/tracks/wren">Wren</a></li>
+<li><a href="/tracks/x86-64-assembly">x86-64 Assembly</a></li>
+<li><a href="/tracks/yamlscript">YAMLScript</a></li>
+<li><a href="/tracks/zig">Zig</a></li>
+</ul>
+</div>
+<div class='col hidden md:block mt-32 xl:mt-0'>
+<h3 class='text-h6'>Want to add a language track to Exercism?</h3>
+<p class='text-p-base'>
+Start a new topic
+<a href="https://forum.exercism.org/c/exercism/4">in the forum</a>
+and let's discuss it.
+</p>
+</div>
+</div>
+</div>
+<hr>
+<div class='legals mt-24 md:mt-32 mb-32 md:mb-40 flex md:items-center flex-col md:flex-row'>
+<div class='company mb-16 md:mb-0 md:mr-32'>
+Exercism is a not-for-profit organisation
+<a href="https://find-and-update.company-information.service.gov.uk/company/11733062">registered in the UK</a>.
+Its trustees are <a href="https://exercism.github.io/kytrinyx/">Katrina Owen</a>, <a href="https://ihid.info/">Jeremy Walker</a> and <a href="https://erikschierboom.com/">Erik Schierboom</a>.
+</div>
+<div class='copyright md:ml-auto'>
+© 2025 Exercism
+</div>
+</div>
+</div>
+</footer>
+<link as='style' href='https://assets.exercism.org/assets/application-5b27aecdf3e773a9bb35dbaaea8adc4463a96d9a.css' rel='prefetch stylesheet'>
+<link as='script' href='https://assets.exercism.org/assets/core-ab165ebae0862c5c81f7a6240d6ec23c2c1083f5.js' rel='prefetch'>
+<link as='script' href='https://assets.exercism.org/assets/application-52a6e9b9f62264b74b701643e6929c4cb7a9aa74.js' rel='prefetch'>
+
+</body>
+</html>

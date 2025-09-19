@@ -1,0 +1,40 @@
+Web Scraper - The #1 web scraping extension Toggle navigation Web Scraper Cloud Scraper Pricing Learn Documentation Video Tutorials Test Sites Forum Install Cloud Login Powerful web scraper
+						for regular and
+						professional use Automate data extraction in 20 minutes Web Scraper is designed for regular and scheduled use to extract
+						large amounts of data and easily integrate with other systems. Start FREE 7-day trial Install Chrome plugin FREE scraper for local use 800'000+ users ` Extract data from the most complex websites Use our always FREE Chrome plugin Point-and-click interface Configure scraper by pointing and clicking on elements.
+					No coding required. Extract data from dynamic web sites Extract data from sited with multiple levels of navigation. Handle JavaScript sites Full JavaScript execution and waiting for Ajax requests Use sitemaps to customize data Customize data to different site structures Export data in CSV, XLSX and JSON formats Build scrapers, scrape sites and export data in CSV format directly from your browser.
+					Use Web Scraper Cloud to export data in CSV, XLSX and JSON formats, access it via API, webhooks or
+					get it exported via Dropbox, Google Sheets or Amazon S3. Start using Web Scraper now! Install Web Scraper Chrome extension Firefox add-on Scrape your first site Streamline your data collection Web Scraper Cloud subscription or FREE trial required Automate data extraction in the cloud Run Web Scraper jobs in Web Scraper Cloud . Scheduler Scrape a site on hourly, daily or weekly basis API Manage scrapers through an API Proxy IP rotation through thousands of IP addresses Parser Streamline data post processing Start FREE 7-day trial Integrate data with any system API and webhook access Manage scraper and access data via API Data formats CSV, JSON, and XLSX supported Integrations Dropbox, Google Sheets, and Amazon S3 Supported 99.9% success rate Captcha Bypass Automatically handled, invisible to user Bot protection bypass Cloudflare, Datadome, PerimeterX and more Auto retry IP rotation, Fingerprint rotation Get started in 4 steps STEP 1 Install Chrome extension STEP 2 Create a sitemap using the extension Always free for unlimited local use STEP 3 Import the sitemap in Web Scraper Cloud and run it STEP 4 Use API or Data Export features to receive the data in your system Requires paid Web Scraper Cloud subscription Start FREE 7-day trial Scale plan Monthly Annual When choosing Scale plan you pay for parallel running jobs.
+					You can increase or decrease the number of parallel running scraping job count as to suit your
+					needs.
+					The plan has an unlimited number of URL credits. The amount of URLs that can be scraped per month depends
+					on parallel running job count, configured request interval, target site response speed and
+					driver that is used to access the page.
+					Full JS driver executes all JavaScript in a page while Fast driver skips JavaScript execution. Scale plan price calculator Parallel active job count: - + Price Scraped URL count with Full JS driver Scraped URL count with Fast driver Close Add-on Proxy To make the Scale plan cost-effective, only a free US datacenter proxy is included.
+					As an optional add-on, residential proxy is available for $3/GB . This ensures you only pay for the bandwidth you actually use. When estimating proxy expenses, consider the average page size. On average,
+					a page scraped with no rendering is 50–150 KB, while a page scraped with full rendering is 100–300 KB. Proxy bandwidth calculator Page size (KB): Page count: Bandwidth (GB) Estimated price: Datacenter (US) Proxy, included $0.00 Estimated price: Residential Proxy Close Pricing Monthly Browser extension FREE Local use only Dynamic Websites JavaScript execution CSV, XLSX export Community support INSTALL Project $ 50 /MO Automate in cloud 5,000 URL credits 2 parallel tasks Dynamic Websites JavaScript execution CSV, XLSX, JSON export Scheduler Proxy Parser Dropbox export Google Sheets export Google Drive export Amazon S3 export Data retention 30 days API E-mail support FREE 7-day trial Professional $ 100 /MO Automate in cloud 20,000 URL credits 3 parallel tasks Dynamic Websites JavaScript execution CSV, XLSX, JSON export Scheduler Proxy Parser Dropbox export Google Sheets export Google Drive export Amazon S3 export Data retention 30 days API E-mail support FREE 7-day trial Business $ 200 /MO Automate in cloud 50,000 URL credits 5 parallel tasks Dynamic Websites JavaScript execution CSV, XLSX, JSON export Scheduler Proxy Parser Dropbox export Google Sheets export Google Drive export Amazon S3 export Data retention 60 days API Priority E-mail support FREE 7-day trial Scale from $ 200 /MO Automate in cloud Unlimited URL credits* 2+ parallel tasks Dynamic Websites JavaScript execution CSV, XLSX, JSON export Scheduler Add-on Proxy* Parser Dropbox export Google Sheets export Google Drive export Amazon S3 export Data retention 60 days API Priority E-mail support FREE 7-day trial Benefit from industry leading support Diego Kremer Simply AMAZING. Was thinking about coding myself a simple scraper for a project
+										and then found this super easy to use and very powerful scraper. Worked
+										perfectly with all the websites I tried on. Saves a lot of time. Thanks for
+										that! Carlos Figueroa Powerful tool that beats the others out there. Has a learning curve to it but
+										once you conquer that the sky's the limit. Definitely a tool worth making a
+										donation on and supporting for continued development. Way to go for the
+										authoring crew behind this tool. Jonathan H This is fantastic! I'm saving hours, possibly days. I was trying to scrap and old
+										site, badly made, no proper divs or markup.
+
+										Using the WebScraper magic, it somehow "knew" the pattern after I selected 2
+										elements. Amazing.
+
+										Yes, it's a learning curve and you HAVE to watch the video and read the docs.
+										Don't rate it down just because you can't be bothered to learn it. If you put
+										the effort in, this will save your butt one day! About Web Scraper Founded in 2017 Located in Latvia, EU Serving over 800'000+ users across the world Obsessed with great customer support Frequently asked questions What is a URL Credit? A URL credit represents a single page loaded by the Web Scraper Cloud.
+										For example if the scraper has to go through 100 pages, then 100 URL credits
+										will be charged.
+										If you are extracting 100 records from a single page, only one URL credit
+										will be charged. Will I be able to scrape a specific site? From our own experience we can say that none of the universal web scraping
+										tools can scrape every site.
+										You have to try it out for yourself.
+										Try Web Scraper Cloud for free with no investments. Do I need to input my credit card information to start free trial? No. How Scale plan differs from other plans? Scale plan is built for large volume scraping.
+										It offers unlimited URL credits with limited running scraping jobs that
+										you can scale up or down as needed. Can I upgrade or downgrade my subscription plan? Yes, you can upgrade your plan at any time during your subscription period.
+										If you wish to downgrade your plan, you can schedule the changes, and the
+										downgrade will take effect at the start of the next billing cycle. Products Web Scraper browser extension Web Scraper Cloud Company About us Contact Website Privacy Policy Browser Extension Privacy Policy Media kit Jobs Resources Blog Documentation Video Tutorials Screenshots Test Sites Forum Status CONTACT US info@webscraper.io Ubelu 5-71, Adazi, Latvia, LV-2164 Copyright © 2025 Web Scraper | All rights reserved
